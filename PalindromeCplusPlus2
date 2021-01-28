@@ -1,0 +1,28 @@
+#include <iostream>
+#include <string>
+
+int main()
+{
+    std::string x = "";
+
+    std::cin >> x;
+
+    std::string compare = "";
+
+
+
+    for (int i = 0; i < x.length(); i++)
+    {
+        compare = compare + x.at(x.length() - (i + 1));
+
+    }
+
+    if (x == compare)
+    {
+        std::cout << "true" << std::endl;
+    }
+    else
+    {
+        std::cout << "false" << std::endl;
+    }
+}
